@@ -11,10 +11,14 @@ document.getElementById('login-btn')
     const pin = inputPin.value;
     console.log(pin);
     //step 3: match pin & mobile number
+    // if(contactNumber === number && pin === number){ //! amni ayta
     if(contactNumber == '01234567890' && pin == '1234'){
 
         //step 3-1: true:::>> alert> homepage
-        alert('login Successful')
+        alert('login Successful');
+
+        // window.location.replace('/home.html')
+        window.location.assign('/home.html');
     }else{
         //step 3-2: false:::>> alert> return
         alert('login Failed');
