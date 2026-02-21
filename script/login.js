@@ -18,7 +18,7 @@ document.getElementById('login-btn')
         alert('login Successful');
 
         // window.location.replace('/home.html')
-        window.location.assign('/home.html');
+        window.location.assign('./home.html');
     }else{
         //step 3-2: false:::>> alert> return
         alert('login Failed');
