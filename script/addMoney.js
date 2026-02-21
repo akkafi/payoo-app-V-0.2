@@ -23,7 +23,9 @@ document.getElementById('add-money-btn').addEventListener('click', function(){
     // 4- get pin
     const pin = getValueFromInput('add-money-pin');
     if(pin == '1234'){
-        alert('Add Money Success');
+        alert(`Add Money Success form 
+            ${bankAccount}
+            at ${new Date()}`);
         setBalance(newBalance)
     }else{
         alert('Invalid Pin');
