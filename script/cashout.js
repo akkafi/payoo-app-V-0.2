@@ -38,10 +38,11 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
 
         setBalance(newBalance); // new version
 
-    }else(
+    }else{
         // 5-2 false :: show an error alert > return
-        alert('Invalid Pin')
-    )
+        alert('Invalid Pin');
+        return;
+    }
 });
 
 
@@ -81,10 +82,10 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
 //         alert('CashOut Successful');
 //         console.log('New Balance', newBalance)
 //         balanceElement.innerText = newBalance;
-//     }else(
+//     }else{
 //         // 5-2 false :: show an error alert > return
 //         alert('Invalid Pin')
-//     )
+//     }
 // })
 
 // document.getElementById('cashout-btn')
@@ -127,8 +128,8 @@ document.getElementById('cashout-btn').addEventListener('click', function(){
 //         maniCurrentBalance.innerText = newBalance;
 //         return;
 //      }
-//      else(
+//      else{
 //         // 5-2 false :: show an error alert > return
 //         alert('Please Enter Your Correct Pin')
-//      )
+//      }
 // })
